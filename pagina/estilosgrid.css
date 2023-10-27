@@ -1,0 +1,165 @@
+/**********************************************/
+/*   ESTILOS DE FORMATO CSS-GRID ENCABEZADO   */
+/**********************************************/
+.contenedor-menus {
+	display: grid;
+	grid-gap: 10px;
+ 	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 80px 100px;
+	grid-template-areas:
+		"logo encb encb encb encb"
+		"menu menu menu menu menu";
+}
+
+.contenedor-menus .logo {
+	grid-area: logo;
+	align-self: end;
+	margin-left: 30px;
+}
+.contenedor-menus .encb {
+	grid-area: encb;
+	justify-self: end;
+	align-self: end;
+}
+.contenedor-menus .menu {
+	grid-area: menu;
+	justify-self: end;
+	align-self: end;
+}
+
+
+/*********************************************/
+/*   ESTILOS DE FORMATO CSS-GRID CONTENIDO   */
+/*********************************************/
+.contenedor-main {
+	display: grid;
+	grid-gap: 5px;
+ 	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(7, auto);
+	grid-template-areas:
+		"prog prog prog resl resl resl"
+		"titu titu titu titu titu titu"
+		"prg1 prg1 prg2 prg2 prg3 prg3"
+		"cmp1 cmp1 cmp2 cmp2 cmp3 cmp3"
+		"matr matr matr matr matr matr"
+		"perf perf perf expt expt expt"
+		"piep piep piep piep piep piep";
+}
+
+.contenedor-main .prog {
+	grid-area: prog;
+}
+.contenedor-main .resl {
+	grid-area: resl;
+}
+.contenedor-main .titu {
+	grid-area: titu;
+}
+.contenedor-main .prg1 {
+	grid-area: prg1;
+}
+.contenedor-main .prg2 {
+	grid-area: prg2;
+}
+.contenedor-main .prg3 {
+	grid-area: prg3;
+}
+.contenedor-main .cmp1 {
+	grid-area: cmp1;
+}
+.contenedor-main .cmp2 {
+	grid-area: cmp2;
+}
+.contenedor-main .cmp3 {
+	grid-area: cmp3;
+}
+.contenedor-main .matr {
+	grid-area: matr;
+}
+.contenedor-main .perf {
+	grid-area: perf;
+}
+.contenedor-main .expt {
+	grid-area: expt;
+}
+
+
+/**********************************************/
+/*   ESTILOS DE FORMATO CSS-GRID PIE PAGINA   */
+/**********************************************/
+.contenedor-pie {
+	display: grid;
+	/* grid-gap: 10px; */
+ 	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, auto);
+	grid-template-areas:
+		"pie1 pie1 pie2 pie3"
+		"pie1 pie1 pie4 pie4";
+}
+
+.contenedor-pie .pie1 {
+	grid-area: pie1;
+}
+.contenedor-pie .pie2 {
+	grid-area: pie2;
+}
+.contenedor-pie .pie3 {
+	grid-area: pie3;
+}
+.contenedor-pie .pie4 {
+	grid-area: pie4;
+}
+
+
+/**********************************************/
+/*   ESTILOS DE FORMATO CSS-GRID PIE PAGINA   */
+/**********************************************/
+#inscripcion {
+	display: grid;
+	/* grid-gap: 10px; */
+ 	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas:
+		"fest fnom fape"
+		"fema fnuc fnid"
+		"fcse fhom fcaj"
+		"ftra fhbd fhbd"
+		"fenv fenv fenv";
+}
+
+#inscripcion .fest {
+	grid-area: fest;
+}
+#inscripcion .fnom {
+	grid-area: fnom;
+}
+#inscripcion .fape {
+	grid-area: fape;
+}
+#inscripcion .fema {
+	grid-area: fema;
+}
+#inscripcion .fnuc {
+	grid-area: fnuc;
+}
+#inscripcion .fnid {
+	grid-area: fnid;
+}
+#inscripcion .fcse {
+	grid-area: fcse;
+}
+#inscripcion .fhom {
+	grid-area: fhom;
+}
+#inscripcion .fcaj {
+	grid-area: fcaj;
+}
+#inscripcion .ftra {
+	grid-area: ftra;
+}
+#inscripcion .fhbd {
+	grid-area: fhbd;
+}
+#inscripcion .fenv {
+	grid-area: fenv;
+}

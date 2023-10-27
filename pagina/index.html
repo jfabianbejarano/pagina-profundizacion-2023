@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<!--
+	Página Web Ingeniería de Software UCompensar Bogotá
+	Desarrollada por: Jaime Fabián Bejarano León
+	Profesor: Cristian Alejandro Amaya Fernández
+	Fundación Universitaria Compensar Bogotá
+	Diseño y Desarrollo Web - 236N-6A MOM 2 VIRTUAL
+-->
+
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Fab - UCompensar | Información sobre nuestos programas académicos.</title>
+	<link rel="icon" href="imagenes/favicon.ico" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="estilosgrid.css">
+	<script src="jquery-3.7.1.min.js"></script>
+	<script src="codigo.js"></script>
+</head>
+
+<body>
+
+	<div class="contenedor contenedor-menus">
+
+		<div class="encb">
+			<ul>
+				<li><a href="#">Graduados</a></li>
+				<li><a href="#">Estudiantes</a></li>
+				<li><a href="#">Estado de Admisión</a></li>
+				<li><a href="#">Reingresos</a></li>
+				<li><a href="#">Pago en Línea</a></li>
+				<li><a href="#">Aplicativos</a></li>
+				<li><a href="#">Emisora</a></li>
+				<li><a href="#">Blog</a></li>
+			</ul>
+		</div>
+
+		<div class="logo">
+			<img src="imagenes/main-logo.svg" alt="Logo UCompensar" />
+		</div>
+
+		<div class="menu">
+			<ul>
+				<li><button id="btnMenuInstitucion">La Institución</button></li>
+				<li><button id="btnMenuEstudiaCN" data-menu="menu-estudiaconnosotros">Estudia con Nosotros</button></li>
+				<li><button id="btnMenuFacultades">Facultades</button></li>
+				<li><button id="btnMenuProgramas">Programas</button></li>
+				<li><button id="btnMenuNuevoCampus">Nuevo Campus</button></li>
+				<li><button id="btnMenuSENA">SENA</button></li>
+				<li><button id="btnMenuFinanciera" data-menu="menu-zonafinanciera">Zona Financiera</button></li>
+				<li><button id="btnMenuEdTech">EdTech</button></li>
+				<li><span class="buscar-icon"></span></li>
+			</ul>
+		</div>
+
+	</div>
+
+
+	<div id="menu-institucion" class="menu-estilo menu-estilo0">
+		<div class="titulo-seccion">
+			<p>La Institución</p>
+		</div>
+		<img src="imagenes/liinea.png" alt="Logo UCompensar" width="200" />
+		<ul>
+			<li>Nuestra Historia</li>
+			<li>Lineamiento Curricular</li>
+			<li>Documentos de Interés</li>
+			<li>Formación Virtual</li>
+			<li>Recorrido Virtual</li>
+		</ul>
+	</div>
+
+	<div id="menu-programas" class="menu-estilo menu-estilo0">
+		<div class="titulo-seccion">
+			<p>Programas</p>
+		</div>
+		<img src="imagenes/liinea.png" alt="Logo UCompensar" width="200" />
+		<ul>
+			<li>Programas Académicos</li>
+			<li>Técnico Laboral</li>
+			<li>Centro de Idiomas</li>
+			<li>Proyectos Especiales</li>
+			<li>Educación Continuada</li>
+		</ul>
+	</div>
+
+	<div id="menu-estudiaconnosotros" class="menu-estilo menu-estilo1">
+		<ul>
+			<li>Paso a Paso</li>
+			<li>Estado de Admisión</li>
+			<li>Solicitud de Verificaciones Académicas</li>
+			<li>Calendario de Admisiones</li>
+			<li>Homologación</li>
+		</ul>
+	</div>
+
+	<div id="menu-zonafinanciera" class="menu-estilo menu-estilo1">
+		<ul>
+			<li>Becas 2023-2</li>
+			<li>Convenios</li>
+			<li>Opciones de financiacón</li>
+			<li>Solicitud apoyo financiero</li>
+			<li>Calendario financiero</li>
+			<li>Maneja tu dinero</li>
+			<li>La forma más fácil de pagar</li>
+		</ul>
+	</div>
+
+
+
+	<div class="contenedor contenedor-main">
+
+		<div class="prog">
+			<div class="prog-enlaces">INICIO / PROGRAMAS / INGENIERÍA DE SOFTWARE – BOGOTÁ</div>
+			<div class="linea-boton">
+				<span>Presencial</span>
+			</div>
+			<div class="titulo-seccion">
+				<p>Ingeniería de Software – Bogotá</p>
+			</div>
+			<div class="prog-descripcion">
+				<p>Desarrolla soluciones de <b>software</b> y conviértete en un líder digital de uno de los sectores con mayor crecimiento del mercado. Obtén tres titulaciones a lo largo de tu formación.</p>
+			</div>
+			<div class="botonInscripcion">
+				<button class="btnRedondeado">Inscríbite aquí<button>
+			</div>
+			<div class="formInscripcion">
+				<form id="inscripcion">
+					<div class="control fest">
+						<label for="selEstudiante">¿Estudiante UCompensar?</label>
+						<select id="selEstudiante" name="selEstudiante" class="form-control">
+							<option value="">--Ninguno--</option>
+							<option value="Si">Si</option>
+							<option value="No">No</option>
+						</select>
+					</div>
+					<div class="control fnom">
+						<label for="txtNombre">Nombre</label>
+						<input type="text" id="txtNombre" name="txtNombre" class="form-control" />
+					</div>
+					<div class="control fape">
+						<label for="txtApellido">Apellido</label>
+						<input type="text" id="txtApellido" name="txtApellido" class="form-control" />
+					</div>
+					<div class="control fema">
+						<label for="txtEmail">Email</label>
+						<input type="text" id="txtEmail" name="txtEmail" class="form-control" />
+					</div>
+					<div class="control fnuc">
+						<label for="txtNumContacto">Número de contacto</label>
+						<input type="text" id="txtNumContacto" name="txtNumContacto" class="form-control" />
+					</div>
+					<div class="control fnid">
+						<label for="txtNumDocumento">Número de documento</label>
+						<input type="text" id="txtNumDocumento" name="txtNumDocumento" class="form-control" />
+					</div>
+					<div class="control fcse">
+						<label for="selComoSeEntero">Como se enteró</label>
+						<select id="selComoSeEntero" name="selComoSeEntero" class="form-control">
+							<option value="">--Ninguno--</option>
+							<option value="001">Buscadores (Google, Bing, Safari)</option>
+							<option value="002">Publicidad</option>
+							<option value="003">Redes Sociales</option>
+							<option value="004">Recomendación de un amigo</option>
+							<option value="005">Correo</option>
+							<option value="006">Llamada</option>
+							<option value="007">Evento - Feria</option>
+							<option value="008">Visita a la U</option>
+							<option value="009">Radio</option>
+							<option value="010">Otro</option>
+						</select>
+					</div>
+					<div class="control fhom">
+						<label for="selHomologacion">Homologación</label>
+						<select id="selHomologacion" name="selHomologacion" class="form-control">
+							<option value="">--Ninguno--</option>
+							<option value="Si">Si</option>
+							<option value="No">No</option>
+						</select>
+					</div>
+					<div class="control fcaj">
+						<label for="selAfiliadoCaja">Afiliado caja Compensar</label>
+						<select id="selAfiliadoCaja" name="selAfiliadoCaja" class="form-control">
+							<option value="">--Ninguno--</option>
+							<option value="Si">Si</option>
+							<option value="No">No</option>
+						</select>
+					</div>
+					<div class="control ftra">
+						<label for="selTrabaja">¿Trabaja en Compensar?</label>
+						<select id="selTrabaja" name="selTrabaja" class="form-control">
+							<option value="">--Ninguno--</option>
+							<option value="Si">Si</option>
+							<option value="No">No</option>
+						</select>
+					</div>
+					<div class="control fhbd">
+						<input type="checkbox" id="chkHabeasData" name="chkHabeasData" class="form-control" />
+						<label for="chkHabeasData">Autoriza habeas data</label>
+					</div>
+					<div class="control fenv">
+						<button class="btnSubmit">Enviar<button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="resl">
+			<img src="imagenes/ingenieria-software-ucompensar.jpg" alt="Ingenieria de Software UCompensar" width="100%" />
+			<div class="info-resolucion">
+				<p><b>SNIES:</b> 109130 &nbsp; &nbsp; &nbsp; <b>Resolución:</b> 9058 del 28 de agosto de 2019</p>
+				<p><b>Duración del programa:</b> 10 semestres &nbsp; &nbsp; &nbsp; <b>Facultad de:</b> Ingeniería</p>
+				<p><b>Años de vigencia:</b> 7 años &nbsp; &nbsp; &nbsp; <b>Jornada diurna:</b> 7:00 a.m. a 1:00 p.m.</p>
+				<p><b>Jornada nocturna:</b> 6:00 p.m. a 10:00 p.m. &nbsp; &nbsp; &nbsp; <b>Valor primer semestre:</b> $ 3.836.800</p>
+				<p><b>Ver tarifas de créditos:</b> <a href="#">Aquí</a></p>
+			</div>
+		</div>
+
+		<div class="titu">
+			<div class="titulo-seccion">
+				<p>Titulaciones</p>
+			</div>
+		</div>
+
+		<div class="prg1 programas">
+			<div class="titulaciones-titulo">
+				<p>Técnica Profesional en</p>
+			</div>
+			<div class="titulaciones-titulo">
+				<p>PROGRAMACIÓN DE APLICACIONES DE SOFTWARE</p>
+			</div>
+			<div class="titulaciones-texto">
+				<p>Resolución 9059 del 28 de agosto de 2019
+					<br>Años de vigencia: 7 años
+					<br>SNIES: 108334
+					<br><br><br>
+					<a href="#">Ver tarifas de créditos aquí</a>
+				</p>
+			</div>
+		</div>
+		<div class="prg2 programas">
+			<div class="titulaciones-titulo">
+				<p>Tecnología en</p>
+			</div>
+			<div class="titulaciones-titulo">
+				<p>DESARROLLO DE APLICACIONES WEB Y MÓVILES</p>
+			</div>
+			<div class="titulaciones-texto">
+				<p>Resolución 9057 del 28 de agosto de 2019
+					<br>Años de vigencia: 7 años
+					<br>SNIES: 108335
+					<br><br><br>
+					<a href="#">Ver tarifas de créditos aquí</a>
+				</p>
+			</div>
+		</div>
+		<div class="prg3 programas">
+			<div class="titulaciones-titulo">
+				<p>Profesional en</p>
+			</div>
+			<div class="titulaciones-titulo">
+				<p>INGENIERÍA DE SOFTWARE</p>
+			</div>
+			<div class="titulaciones-texto">
+				<p>Resolución 9058 del 28 de agosto de 2019
+					<br>Años de vigencia: 7 años
+					<br>SNIES: 109130
+					<br><br><br>
+					<a href="#">Ver tarifas de créditos aquí</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="cmp1">
+			<div class="titulo-seccion">
+				<p>Campo Laboral</p>
+			</div>
+			<ul>
+				<li>Ingeniero de calidad.</li>
+				<li>Ingeniero de requerimientos.</li>
+				<li>Gerente de proyectos de software.</li>
+				<li>Líder de desarrollo de software.</li>
+				<li>Desarrollador de software web.</li>
+				<li>Integrador de soluciones web y móviles.</li>
+				<li>Desarrollador de aplicaciones móviles.</li>
+				<li>Líder Técnico de pruebas.</li>
+			</ul>
+		</div>
+		<div class="cmp2">
+			<img src="imagenes/programadora-software-ucompensar.jpg" alt="Programadora de Software UCompensar" />
+		</div>
+		<div class="cmp3">
+			<img src="imagenes/Ingeniero-de-requerimientos-ucompensar.jpg" alt="Ingeniero de Requerimientos UCompensar" />
+		</div>
+
+		<div class="matr">
+			<div class="titulo-seccion">
+				<p>Matrículas Abiertas</p>
+			</div>
+			<div class="matr-contenido">
+				<p>Somos la institución universitaria para todos y nuestro objetivo es integrar a la comunidad con el sector productivo para afrontar los desafíos del futuro.</p>
+			</div>
+		</div>
+
+		<div class="perf">
+			<img src="imagenes/Ingeniero-de-calidad-ucompensar.jpg" alt="Ingeniero de Calidad UCompensar" />
+			<div class="perf-titulo">
+				<span><b>Este será tu perfil</b></span>
+			</div>
+			<div class="perf-texto">
+				<p>El ingeniero de software es competente en todas y cada una de las etapas que comprenden el ciclo de vida de construcción de software como requerimientos, análisis, diseño, arquitectura, implementación, pruebas y puesta en marcha, así como en administrar tiempos, recursos y procesos de una manera efectiva para la finalización exitosa de proyectos de software.<p>
+			</div>
+		</div>
+		<div class="expt">
+			<div class="titulo-seccion">
+				<p>Sé un experto en:</p>
+			</div>
+			<ul>
+				<li>Diseño y desarrollo web.</li>
+				<li>Diseño UX/UI.</li>
+				<li>Diseño y desarrollo de aplicaciones móviles.</li>
+				<li>Arquitectura de software.</li>
+				<li>Desarrollo backEnd.</li>
+				<li>Desarrollo frontEnd.</li>
+				<li>Ingeniería de requerimientos.</li>
+				<li>Cloud Computing.</li>
+				<li>Testing y aseguramiento de la calidad.</li>
+				<li>Metodologías ágiles de desarrollo.</li>
+				<li>Gestión de proyectos de software.</li>
+				<li>Integración de tecnologías.</li>
+			</ul>
+			<button class="btnPlanEstudio">Plan de Estudios</button>
+		</div>
+
+	</div>
+
+	<div class="contenedor-pie">
+
+		<div class="pie1">
+			<img src="imagenes/Logo-Fundacion-Universitaria-compensar.svg" alt="Logo Fundacion UCompensar" />
+			<div class="pie1-texto">
+				<p>Fundación Universitaria Compensar P.J. Resolución 23635 del 23 diciembre 1981 | 12455 del 9 de julio 2020. – VIGILADA MINEDUCACIÓN</p>
+				<p>Para requerimientos de autoridades, tutelas o notificaciones judiciales por favor dirigirse al correo:</p>
+				<a href="#">notificacionesjudiciales@ucompensar.edu.co</a>
+			</div>
+
+			<button class="boton-whatsapp">Escríbenos a WhatsApp</button>
+
+			<div class="pie1-siguenos">
+				<h3>Síguenos</h3>
+				<br>
+				<ul>
+					<li><img src="imagenes/siguenos-facebook.png" alt="Facebook" /></li>
+					<li><img src="imagenes/siguenos-twitter.png" alt="Twitter" /></li>
+					<li><img src="imagenes/siguenos-instagram.png" alt="Instagram" /></li>
+					<li><img src="imagenes/siguenos-youtube.png" alt="YouTube" /></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="pie2">
+			<h1>Bogotá</h1><br>
+			<p>Sede principal</p>
+			<p>Avenida (Calle) 32 No. 17 – 30</p>
+			<p>Teléfono: 601 338 06 66</p>
+		</div>
+
+		<div class="pie3">
+			<h1>Villavicencio</h1><br>
+			<p>Sede Cofrem</p>
+			<p>Carrera 35 No. 20A-02</p>
+			<p>Vía Catama (antes del Colegio Cofrem)</p>
+			<p>Teléfono: 608 681 86 40</p>
+		</div>
+
+		<div class="pie4">
+			<h3>Otros links</h3>
+			<ul>
+				<li><a href="#">Documentos de Interés</a></li>
+				<li><a href="#">Régimen Tributario Especial</a></li>
+				<li><a href="#">Radica tus PQRSF AQUÍ</a></li>
+				<li><a href="#">Preguntas Frecuentes</a></li>
+				<li><a href="#">Trabaja con Nosotros</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+
+	<!-- Botones flotantes -->
+	<div class="boton-flotante-whatsapp">
+		<img src="imagenes/whatsapp.png" />
+	</div>
+	<div class="boton-flotante-chat">
+		<img src="imagenes/cta_icon.png" />
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,535 @@
+/***********************************/
+/*   ESTILOS DE FORMATO CSS   */
+/***********************************/
+
+/*   Estilos Generales   */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #fff;
+	color: #000;
+	font-family: 'Roboto',Arial,Helvetica,sans-serif;
+	line-height: 1.5;
+}
+
+
+/*   Estilos Contenedores Principales   */
+.contenedor {
+	width: 95%;
+	max-width: 1450px;
+	margin: auto;
+}
+.contenedor > div {
+	/* background: #eee; */
+	padding: 10px;
+}
+.contenedor-menus {
+	
+}
+.contenedor-main {
+	border-top: 0.1rem solid #ddd;
+}
+.contenedor-pie {
+	background: #4e5357;
+	color: #fff;
+	padding: 50px;
+}
+
+.titulo-seccion {
+	font-size: 48px;
+    font-weight: bolder;
+}
+
+/*   Estilos Encabezado   */
+.contenedor-menus .logo img {
+	width: 290px;
+}
+.contenedor-menus .encb {
+	font-style: italic;
+	font-size: 0.85rem;
+}
+.contenedor-menus .encb ul {
+	list-style-type: none;
+}
+.contenedor-menus .encb li {
+	float: left;
+	text-align: center;
+	padding: 0 20px;
+}
+.contenedor-menus .encb a:link {
+	color: black;
+	text-decoration: none;
+}
+.contenedor-menus .encb a:visited {
+	color: black;
+	text-decoration: none;
+}
+.contenedor-menus .encb a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+
+/*   Estilos Menu   */
+.contenedor-menus .menu {
+	grid-area: menu;
+	justify-self: end;
+	align-self: end;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.contenedor-menus .menu ul {
+	list-style-type: none;
+}
+.contenedor-menus .menu li {
+	float: left;
+	text-align: center;
+	padding: 0 15px 0 15px;
+}
+.contenedor-menus .menu button {
+	background: #fff;
+	padding: 40px 0 40px 0;
+	font-size: 1.1rem;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+.contenedor-menus .menu button:hover {
+	color: #eb5d0b;
+}
+.contenedor-menus .menu .buscar-icon {
+    background: #f60 url(imagenes/search-icon.svg) no-repeat center center;
+    background-size: 24px 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/*   Estilos Submenus   */
+.menu-estilo {
+	display: none;
+	position: fixed;
+	background: #fff;
+	z-index: 200
+}
+.menu-estilo .titulo-seccion {
+	font-size: 48px;
+    font-weight: bolder;
+	padding: 20px 0 20px 0;
+}
+.menu-estilo ul {
+	list-style-type: none;
+}
+.menu-estilo li {
+	padding: 15px;
+	font-size: 1.2rem;
+	color: #444;
+}
+.menu-estilo0 {
+	width: 100%;
+	height: 900px;
+	padding-left: 30px;
+}
+.menu-estilo1 {
+	width: 300px;
+	border-color: #bbb;
+	border-style: solid;
+	border-width: 1px;
+}
+.menu-estilo0 img {
+	height: 10px;
+	width: 50px;
+}
+.menu-estilo0 li:hover {
+	background: #ffe8d9;
+	color: #ea580c;
+	font-weight: bold;
+	width: 300px; 
+}
+.menu-estilo1 li:hover {
+	font-weight: bold;
+}
+
+
+
+/*   Estilos Programa   */
+.prog-enlaces {
+	font-size: 0.7rem;
+	padding: 20px 0 30px 0;
+	color: #bbb;
+}
+
+.linea-boton {
+	font-size: 0.9rem;
+	text-align: center;
+	position: sticky;
+	/* position: relative; */
+	margin-right: 100px;
+	margin-bottom: 40px;
+	z-index: 100;
+}
+.linea-boton:after {
+	content: '';
+	position: absolute;
+	display: block;
+	background: #f60;
+	width: 100%;
+	height: 1px;
+	top: 11px;
+	z-index: -1;
+}
+.linea-boton span {
+	position: sticky;
+	line-height: 25px;
+	color: #f60;
+	border: 1px solid #f60;
+	padding: 5px 40px;
+	border-radius: 18px;
+	background: #fff;
+	z-index: 110;
+}
+
+.contenedor-main .prog .titulo-seccion {
+	margin-right: 100px;
+}
+.contenedor-main .prog .prog-descripcion {
+	font-size: 18px;
+	margin-right: 100px;
+	padding: 20px 100px 20px 0;
+}
+.contenedor-main .prog .btnRedondeado {
+    background-color: #fff;
+    font-size: 1.2rem;
+    color: #00233b;
+    text-align: center;
+	min-width: 275px;
+	margin-bottom: 20px;
+	padding: 18px 32px;
+    border: 1px solid #f60;
+    border-radius: 35px;
+    line-height: 26px;
+}
+.contenedor-main .prog .btnRedondeado:hover {
+	background-color: #8c3800;
+	border-color: #8c3800;
+	color: #fff;
+}
+.contenedor-main .prog .formInscripcion {
+	font-size: 0.95rem;
+	margin-right: 80px;
+}
+
+
+.contenedor-main .prog .formInscripcion .control {
+	padding: 0 5px 30px 5px;
+}
+
+.contenedor-main .prog .formInscripcion .form-control {
+	width: 100%;
+}
+.contenedor-main .prog .formInscripcion label {
+	font-size: 0.8rem;
+}
+.contenedor-main .prog .formInscripcion select {
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	height: 30px;
+	margin-top: 10px;
+}
+.contenedor-main .prog .formInscripcion input[type=text] {
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	height: 30px;
+	margin-top: 10px;
+}
+.contenedor-main .prog .formInscripcion .btnSubmit {
+    background-color: #f60;
+	font-weight: bolder;
+    color: #fff;
+    text-align: center;
+    width: 80px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border: 0;
+    border-radius: 10px;
+}
+.contenedor-main .prog .formInscripcion .fhbd {
+	margin: 20px;
+	padding: 20px 0;
+	width: 50%;
+	border: 1px solid #ccc;
+}
+.contenedor-main .prog .formInscripcion .fhbd input[type=checkbox] {
+	margin: 10px;
+	width: 10%;
+}
+
+
+
+
+
+/*   Estilos Resolución   */
+.contenedor-main .resl {
+	padding-top: 0;
+}
+.contenedor-main .resl .info-resolucion {
+	font-size: 0.9rem;
+	background: #617989;
+	color: #fff;
+	padding: 10px;
+	margin: -10px 0 0 0;
+}
+.contenedor-main .resl .info-resolucion p {
+	padding: 10px;
+}
+.contenedor-main .resl .info-resolucion a {
+	color: #fff;
+}
+.contenedor-main .resl .info-resolucion a:visited {
+	color: #fff;
+}
+.contenedor-main .resl .info-resolucion a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+/*   Estilos Titulaciones   */
+.contenedor-main .titu {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+.contenedor-main .programas {
+	background: #f8f7f5;
+	text-align: center;
+	padding: 45px;
+	margin: 10px;
+	border-radius: 18px;
+}
+.contenedor-main .programas .titulaciones-titulo {
+	font-size: 1.3rem;
+	margin-bottom: 20px;
+}
+.contenedor-main .programas .titulaciones-texto {
+	font-size: 0.8rem;
+	margin-bottom: 20px;
+}
+.contenedor-main .programas .titulaciones-texto a:link {
+	font-size: 1.1rem;
+	color: #f60;
+}
+
+.contenedor-main .cmp1 .titulo-seccion {
+	margin-bottom: 30px;
+}
+.contenedor-main .cmp1 li {
+    font-size: 1.2rem;
+    margin: 0 0 5px 40px;
+}
+.contenedor-main .cmp2 img {
+	width: 100%;
+}
+.contenedor-main .cmp3 img {
+	width: 100%;
+}
+
+/*   Estilos Matriculas   */
+.contenedor-main .matr {
+	background: #f8f7f5;
+	text-align: center;
+	margin: 40px 0 30px 0;
+	padding: 40px 0 30px 0;
+}
+.contenedor-main .matr .titulo-seccion {
+	margin-bottom: 30px;
+}
+.contenedor-main .matr .matr-contenido {
+	font-size: 1.2rem;
+	margin-left: 110px;
+	margin-right: 110px;
+}
+.contenedor-main .perf {
+	padding-bottom: 70px;
+}
+.contenedor-main .perf img {
+	width: 100%;
+	margin-bottom:20px;
+}
+.contenedor-main .perf .perf-titulo {
+	padding-bottom: 11px;
+	position: relative;
+	display: inline-block;
+}
+.contenedor-main .perf .perf-titulo span {
+	font-size: 2rem;
+	color: #f60;
+	text-decoration: underline;
+	text-underline-position: under;
+}
+.contenedor-main .perf .perf-texto {
+	font-size: 1.1rem;
+	line-height: 1.8;
+}
+
+.contenedor-main .expt {
+	margin-left: 50px;
+	margin-bottom: 70px;
+}
+.contenedor-main .expt .titulo-seccion {
+	margin-bottom: 70px;
+}
+.contenedor-main .expt ul li {
+	list-style-image: url("imagenes/punto-lista.png");
+	font-size: 1.1rem;
+	padding-left: 25px;
+	padding-bottom: 17px;
+	margin-left: 20px;
+}
+.contenedor-main .expt .btnPlanEstudio {
+	background: #446d89;
+	font-size: 1.2rem;
+	line-height: 32px;
+	color: #fff;
+	width: 340px;
+	height: 50px;
+	max-width: 100%;
+	position: relative;
+	border: 0;
+	margin-top: 15px;
+}
+.contenedor-main .expt .btnPlanEstudio:hover {
+	color: #1867ae;
+}
+.contenedor-main .expt .btnPlanEstudio:before {
+	content: '';
+    background: #2c90e8 url(imagenes/down-arrow.svg) no-repeat center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 50px;
+}
+
+
+/*   Estilos Pie de Página   */
+.contenedor-pie .pie1 {
+	max-width: 350px;
+}
+.contenedor-pie .pie1 img {
+	max-width: 350px;
+}
+.contenedor-pie .pie1 .pie1-texto {
+	margin: 40px 20px 40px 0;
+	font-size: 0.75rem;
+}
+.contenedor-pie .pie1 .pie1-texto p {
+	padding-bottom: 20px;
+}
+.contenedor-pie .pie1 .pie1-texto a {
+	color: #f60;
+}
+
+.contenedor-pie .pie1 .boton-whatsapp {
+    display: block;
+    background: #fff;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: underline;
+    border-radius: 50px;
+    width: 330px;
+    height: 55px;
+    padding: 5px 12px;
+}
+.contenedor-pie .pie1 .boton-whatsapp::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background: url(imagenes/whatsapp-icon.svg) no-repeat center;
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+}
+
+.contenedor-pie .pie1 .pie1-siguenos {
+	margin-top: 30px;
+}
+.contenedor-pie .pie1 .pie1-siguenos ul {
+	list-style-type: none;
+}
+.contenedor-pie .pie1 ul li {
+	float: left;
+	padding: 0 20px 0 0;
+}
+
+.contenedor-pie .pie2 {
+	line-height: 32px;
+}
+
+.contenedor-pie .pie3 {
+	line-height: 32px;
+}
+
+.contenedor-pie .pie4 h3 {
+	color: #f60;
+}
+.contenedor-pie .pie4 ul {
+	list-style-type: none;
+}
+.contenedor-pie .pie4 ul li {
+	font-size: 0.8rem;
+	line-height: 2rem;
+	float: left;
+	padding: 0 20px 0 0;
+}
+.contenedor-pie .pie4 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/*   Botones flotantes   */
+.boton-flotante-whatsapp {
+    background-color: #25D366;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    padding: 12px;
+	position: fixed;
+	bottom: 130px;
+	right: 45px;
+	cursor: pointer;
+}
+.boton-flotante-whatsapp img {
+    position: fixed;
+	bottom: 135px;
+	right: 47px;
+    height: 35px;
+    width: 40px;
+}
+.boton-flotante-chat {
+    background-color: #f60;
+    border-radius: 50%;
+	border: 5px solid #fff;
+    height: 20px;
+    width: 20px;
+    padding: 12px;
+	position: fixed;
+	bottom: 50px;
+	right: 45px;
+	cursor: pointer;
+}
+.boton-flotante-chat img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 43px;
+    width: 43px;
+}
+
